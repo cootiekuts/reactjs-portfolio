@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 export default function Content() {
   return (
@@ -21,9 +22,9 @@ export default function Content() {
       <section id='about'>
         <div className='section-span'>
           <h2>ABOUT</h2>
-          </div>
+          
+        </div>      
       </section>      
-
     </div>
   )
 }
