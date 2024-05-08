@@ -6,7 +6,8 @@ export default function Content() {
     <div className='content'>
       <section id='top'>
         <div className='section-span'>
-          <h2>BASIC INFORMATION<img src="src/components/images/ooga.png" /></h2>
+          <h2>BASIC INFORMATION</h2>
+          <img src="src/components/images/ooga.png" />
           </div>
       </section>
       <section id='xp'>
