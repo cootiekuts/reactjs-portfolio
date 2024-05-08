@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x:visible;
+  
 }
 
 @font-face { 
@@ -22,7 +22,7 @@ header {
   position: fixed;
   text-align: center;
   width: 100vw;
-  background-color:aquamarine;
+  background-color:blue;
   z-index: 1;
 
 }
@@ -31,12 +31,13 @@ header {
 .main-container {
   display:inline-block;
   width: 100vh;
+  
 
 }
 
 .main-content {
   text-align: center;
-  margin-top: 7.93vh;
+  margin-top: 7.88vh;
   display: flex;  
   width: 100vw;
   overflow-x: hidden;
@@ -48,7 +49,8 @@ header {
   width: 25vw;
   height: 100vh;
   position: fixed;
-  background-color:chartreuse;
+  background-color:purple;
+  z-index: 1s;
  
 }
 
@@ -62,7 +64,7 @@ header {
 
 .content {
   width: 75vw;
-  height: 89.12vh;
+  height: 92.1vh;
   position: relative;
   margin-left:25vw;
 }
@@ -77,13 +79,15 @@ header {
 
 
 footer{
-  position: relative;
+  position: absolute;
+  top: 97.5vh;
   text-align: center;
   width: 100vw;
-  background-color:aquamarine;
+  height: auto;
+  background-color:white;
   z-index: 1;
-  font-size: 25px;
-  
+  font-size: 15px;
+
 }
 
 .nav{
@@ -98,8 +102,6 @@ footer{
 }
 
 .sidebar-button {
-
-  background-color:blue;
   border-radius: 10px;
   width: 90%;
   margin-top: 15px;
@@ -165,16 +167,21 @@ footer{
 }
 
 #top {
-  background-color:rgb(9, 115, 207);
+  position: sticky;
+  background-color:green;
 }
 #xp {
-  background-color: #ff7300;
+  background-color:yellow;
 }
 #skill {
- background-color: #7a00ff;
+ background-color:orange;
 }
 #about {
-  background-color: #fffb00;
+  background-color:red;
+}
+
+.footer-div {
+ 
 }
 
 .footer-div img {

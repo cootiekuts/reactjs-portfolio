@@ -23,7 +23,6 @@ export default function Content() {
       <section id='about'>
         <div className='section-span'>
           <h2>ABOUT</h2>
-          
         </div>      
       </section>      
     </div>
