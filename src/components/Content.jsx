@@ -7,7 +7,7 @@ export default function Content() {
       <section id='top'>
         <div className='section-span'>
           <h2>BASIC INFORMATION</h2>
-          <img src="/images/ooga.png" />
+          <img src="img/ooga.png" />
         </div>
       </section>
       <section id='xp'>
