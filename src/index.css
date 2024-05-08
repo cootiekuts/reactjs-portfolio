@@ -50,7 +50,7 @@ header {
   height: 100vh;
   position: fixed;
   background-color:purple;
-  z-index: 1s;
+  z-index: 1;
  
 }
 
