@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+@font-face { 
+  font-family: papyrus; src: url(./fonts/papyrus.ttf); 
+} 
+
 h1 {
   font-size: 5vh;
   font-family: papyrus;
