@@ -5,6 +5,7 @@ function App() {
   return(
     <>
     <Main/>
+    <img src="src/components/images/ooga.png" />
     </>
   );
 
