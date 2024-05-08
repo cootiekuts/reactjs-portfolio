@@ -6,7 +6,7 @@
 }
 
 @font-face { 
-  font-family: papyrus; src: url(./fonts/papyrus.ttf); 
+  font-family: papyrus; src: url(./components/fonts/papyrus.ttf); 
 } 
 
 h1 {
