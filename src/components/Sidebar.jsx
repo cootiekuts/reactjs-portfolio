@@ -1,8 +1,15 @@
 import React from 'react'
 
 export default function Sidebar() {
-  return (
-    <div className='sidebar'> 
+  // var sidebarElem = document.getElementById("sidebarId");
+  // var width = sidebarElem.clientWidth
+  // var height = sidebarElem.clientHeight
+
+  
+  return ( 
+    <>
+    <div className='sidebar' id="sidebarId">
+    {/* <p>{width} X {height}</p>   */}
       <nav className='nav'>
         <a href='#top'><button className='sidebar-button'><h2>BASIC INFORMATION</h2></button></a>
         <a href='#xp'><button className='sidebar-button'><h2>EXPERIENCE</h2></button></a>
@@ -10,5 +17,6 @@ export default function Sidebar() {
         <a href='#about'><button className='sidebar-button'><h2>ABOUT</h2></button></a>
       </nav>
     </div>
+    </>
   )
 }
