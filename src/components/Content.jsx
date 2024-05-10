@@ -1,13 +1,18 @@
 import React from 'react'
-import Footer from './Footer'
 
 export default function Content() {
   return (
-    <div className='content'>
+    <>
       <section id='top'>
         <div className='section-span'>
           <h2>BASIC INFORMATION</h2>
-          <img src="img/ooga.png" />
+          <p><h3>Full Name: Bryle Christian Regencia</h3></p>
+          <p><h3>Addresses:</h3></p>
+          <ul>
+            <li>Provincial: 178 Ilaya, Balanacan, Mogpog, Marinduque</li>
+            <li>Metro Manila: 822 P.Herrra, Aguho, Pateros, Metro Manila</li>
+          </ul>
+      
         </div>
       </section>
       <section id='xp'>
@@ -24,7 +29,7 @@ export default function Content() {
         <div className='section-span'>
           <h2>ABOUT</h2>
         </div>      
-      </section>      
-    </div>
+      </section>   
+      </>  
   )
 }

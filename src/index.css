@@ -9,101 +9,87 @@
   font-family: papyrus; src: url(./assets/fonts/papyrus.ttf); 
 } 
 
-h1 {
-  font-size: 5vh;
-  font-family: papyrus;
+.main-container {
+  position: fixed;
+  width: 100vh;
 }
 
-header {
+.header-div {
   position: fixed;
   text-align: center;
-  width: 100vw;
   background-color:blue;
-  z-index: 1;
-
+  z-index: -1;
+  margin-left: 25vw;
+  width: 75vw;
 }
 
-
-.main-container {
-  display:inline-block;
-  width: 100vh;
-  
-
+.header-div h1 {
+  font-size: 5vh;
+  font-family: papyrus;
+  overflow-y: hidden ;
 }
 
 .main-content {
-  text-align: center;
-  margin-top: 7.85vh;
-  display: flex;  
+  display: inline-block;  
   width: 100vw;
-  overflow-x: hidden;  
+  overflow-x: hidden;
+  width: 75vw;
+  height: calc(100vh - 82.3px);
+  position: sticky;
+  margin-left:25vw;
+  margin-top: 7.88vh;
+  
+}
+
+.main-content section {
+  height: inherit;
+  padding: 2vw;
+}
+
+.main-content h2 {
+  font-size: 5vh;
+  text-align: center;
+}
+
+#top {
+  background-color:pink;
+}
+#xp {
+  background-color:whitesmoke;
+}
+#skill {
+ background-color:whitesmoke;
+}
+#about {
+  background-color:whitesmoke;
 }
 
 .sidebar { 
-  
   width: 25vw;
   height: 100vh;
   position: fixed;
-  background-color:purple;
   z-index: 1;
- 
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  align-content: center;
 }
 
-.sidebar a{
-  text-decoration: none;
-}
-
-.sidebar p {
- font-size: xx-large;
-}
-
-.content {
-  width: 75vw;
-  height: 92.1vh;
-  position: relative;
-  margin-left:25vw;
-}
-
-.content p{
-  font-size: xx-large;
-}
-
-.content section{
-  height: 92.1vh;
-
-}
-
-
-footer{
-  position: absolute;
+.footer-div {
+  position: fixed;
   top: calc(100vh - 24px);
   text-align: center;
   width: 100vw;
   height: auto;
-  background-color:white;
+  background-color:#006666;
   z-index: 1;
   font-size: 15px;
-
 }
 
-.nav{
-  border-radius: 10px;
-  margin: 20px; /* top, right, bottom, left */;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
+.footer-div img {
+  max-width: 20px;
+  max-height: 20px;
+  margin-top: 3px;
 }
   
 .sidebar-button {
@@ -121,6 +107,7 @@ footer{
   border-radius: 10px;
   font-size: calc(1vh + 1vw);
   padding: 1vh; 
+  margin-left: 2vw;
 }
 
 
@@ -173,24 +160,19 @@ footer{
   100% { background-position: 0 0; }
 }
 
-#top {
-  position: sticky;
-  background-color:green;
-}
-#xp {
-  background-color:yellow;
-}
-#skill {
- background-color:orange;
-}
-#about {
-  background-color:red;
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
-.footer-div img {
-  max-width: 20px;
-  max-height: 20px;
-}
+
 
 
 

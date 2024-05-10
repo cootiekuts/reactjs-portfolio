@@ -9,9 +9,9 @@ export default function Main() {
   return (
     <>
     <div className="main-container" id='mainContId'>
-      <Header/> 
-      <div className="main-content">  
-        <Sidebar/>
+      <Header/>
+      <Sidebar/>
+      <div className='main-content'>
         <Content/>
       </div>
       <Footer/>
