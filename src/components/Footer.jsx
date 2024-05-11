@@ -3,7 +3,7 @@ function Footer() {
     return (
       <div className="footer-div">
       <footer>
-        <p><img src="img/ooga.png"></img>{new Date().getFullYear()} Portfolio</p>
+        <img src="img/ooga.png"></img><h6>{new Date().getFullYear()} ortfolio</h6>
       </footer>
       </div>
     );

@@ -34,7 +34,7 @@
   width: 100vw;
   overflow-x: hidden;
   width: 75vw;
-  height: calc(100vh - 82.3px);
+  height: calc(100vh - 79.1px);
   position: sticky;
   margin-left:25vw;
   margin-top: 7.88vh;
@@ -51,8 +51,37 @@
   text-align: center;
 }
 
+.main-content h3 {
+  font-size: 2.5vh;
+}
+
+.list-div {
+  padding-left: 2vw;
+}
+
+.list-div a {
+  text-decoration: none;
+}
+
+.prof-img{
+  border-radius: 50%;
+  background: white;
+  width: 25vw;
+  height: 40vh;
+}
+
+.image-div {
+  text-align: center;
+}
+
+.icon-div {
+  width: 2vw;
+  height: 2.5vh;
+  margin-left: 1vw;
+}
+
 #top {
-  background-color:pink;
+  background-color:#23a6d5;
 }
 #xp {
   background-color:whitesmoke;
@@ -81,9 +110,8 @@
   text-align: center;
   width: 100vw;
   height: auto;
-  background-color:#006666;
+  background-color:#b7b7b7;
   z-index: 1;
-  font-size: 15px;
 }
 
 .footer-div img {
