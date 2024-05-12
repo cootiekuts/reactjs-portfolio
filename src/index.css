@@ -31,10 +31,9 @@
 
 .main-content {
   display: inline-block;  
-  width: 100vw;
   overflow-x: hidden;
   width: 75vw;
-  height: calc(100vh - 79.1px);
+  height: calc(100vh - 77px);
   position: sticky;
   margin-left:25vw;
   margin-top: 7.88vh;
@@ -148,6 +147,9 @@
   align-content: center;
 }
 
+.sidebar h2 {
+  font-size:1vh+1vw;
+}
 .footer-div {
   position: fixed;
   top: calc(100vh - 24px);
@@ -167,6 +169,7 @@
 .sidebar-button {
   border-radius: 10px;
   width: 20vw;
+  height: 12vh;
   margin-top: 15px;
   margin-bottom: 15px;
   border: none;
@@ -340,7 +343,7 @@ ol, li {
   scroll-snap-type: x mandatory;
   margin-left: 2vw;
   margin-right: 2vw;
-  margin-bottom: 1vh;
+  margin-bottom: 3vh;
   
 }
 
@@ -349,7 +352,6 @@ ol, li {
   flex: 0 0 100%;
   width: 100%;
   background-color: #f99;
-  counter-increment: item;
   border-radius: 2vh+2vw;
 
 }
@@ -359,7 +361,6 @@ ol, li {
 }
 
 .carousel__slide:before {
-  content: counter(item);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -406,7 +407,7 @@ ol, li {
 .carousel__navigation {
   position: absolute;
   right: 0; 
-  bottom: -0.5vh;
+  bottom: 1vh;
   left: 0;
   text-align: center;
 }
