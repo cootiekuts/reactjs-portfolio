@@ -478,6 +478,9 @@ ol, li {
   pointer-events: none;
 } */
 
+.carousel__navigation-button:active{
+  box-shadow: 2px white;
+}
 
 
 
