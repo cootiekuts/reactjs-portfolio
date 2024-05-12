@@ -49,9 +49,9 @@ export default function Content() {
                 class="carousel__slide">
               <div class="carousel__snapper">
                 <a href="#carousel__slide4"
-                  class="carousel__prev">Go to last slide</a>
+                  class="carousel__prev"></a>
                 <a href="#carousel__slide2"
-                  class="carousel__next">Go to next slide</a>
+                  class="carousel__next"/>
               </div>
               <div className='content-div'>
               <p><h2>Freelance - Social Media Manager</h2></p>
@@ -68,9 +68,9 @@ export default function Content() {
                 class="carousel__slide">
               <div class="carousel__snapper"></div>
               <a href="#carousel__slide1"
-                class="carousel__prev">Go to previous slide</a>
+                class="carousel__prev"></a>
               <a href="#carousel__slide3"
-                class="carousel__next">Go to next slide</a>
+                class="carousel__next"></a>
               <p><h2>Movate - Chat Technical Support Engineer</h2></p>
               <p><h3>Taguig</h3></p> 
               <p><h3>December 2022 - April 2023</h3></p>
@@ -85,9 +85,9 @@ export default function Content() {
                 class="carousel__slide">
               <div class="carousel__snapper"></div>
               <a href="#carousel__slide2"
-                class="carousel__prev">Go to previous slide</a>
+                class="carousel__prev"></a>
               <a href="#carousel__slide4"
-                class="carousel__next">Go to next slide</a>
+                class="carousel__next"></a>
             <p><h2>Aventus Medical Care Inc - Database Administrator/System Administrator</h2></p>
             <p><h3>Taguig</h3></p> 
             <p><h3>December 2022 - April 2023</h3></p>
@@ -104,28 +104,28 @@ export default function Content() {
                 class="carousel__slide">
               <div class="carousel__snapper"></div>
               <a href="#carousel__slide3"
-                class="carousel__prev">Go to previous slide</a>
+                class="carousel__prev"></a>
               <a href="#carousel__slide1"
-                class="carousel__next">Go to first slide</a>
+                class="carousel__next"></a>
             </li>
           </ol>
           <aside class="carousel__navigation">
             <ol class="carousel__navigation-list">
               <li class="carousel__navigation-item">
                 <a href="#carousel__slide1"
-                  class="carousel__navigation-button">Go to slide 1</a>
+                  class="carousel__navigation-button"></a>
               </li>
               <li class="carousel__navigation-item">
                 <a href="#carousel__slide2"
-                  class="carousel__navigation-button">Go to slide 2</a>
+                  class="carousel__navigation-button"></a>
               </li>
               <li class="carousel__navigation-item">
                 <a href="#carousel__slide3"
-                  class="carousel__navigation-button">Go to slide 3</a>
+                  class="carousel__navigation-button"></a>
               </li>
               <li class="carousel__navigation-item">
                 <a href="#carousel__slide4"
-                  class="carousel__navigation-button">Go to slide 4</a>
+                  class="carousel__navigation-button"></a>
               </li>
             </ol>
           </aside>
