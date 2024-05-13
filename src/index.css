@@ -55,7 +55,6 @@
   inset: 0;
   opacity: 0.3;
   background-color: #111;
-  
 }
 
 #xp::before {
@@ -106,8 +105,13 @@
 }
 
 .content-div {
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.top-content-div {
+  padding-top: 2vh;
+  text-align: center;
 }
 .list-div {
   padding-left: 2vw;
@@ -117,8 +121,12 @@
   text-decoration: none;
 }
 
+.place-date-div {
+  text-align: center;
+  height: 7vh;
+}
 .prof-img{
-  border-radius: 50%;
+  border-radius: 10px;
   background: black;
   width: 25vw;
   height: 40vh;
@@ -129,6 +137,12 @@
   text-align: center;
 }
 
+.xp-text-div {
+  align-content: center;
+  border: 1px solid black;
+  height: 60vh;
+
+}
 .icon-div {
   width: 2vw;
   height: 2.5vh;
@@ -170,8 +184,8 @@
   border-radius: 10px;
   width: 20vw;
   height: 12vh;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   border: none;
   outline: double;
   color: #fff;
@@ -228,71 +242,6 @@
   top: 0;
   border-radius: 10px;
 }
-
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
-}
-
-@keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
-
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
-
-
 
 * {
   box-sizing: border-box;
@@ -370,16 +319,6 @@ ol, li {
   
 }
 
-/* .carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-  
-} */
-
 @media (hover: hover) {
   .carousel__snapper {
     animation-name: tonext, snap;
@@ -429,7 +368,9 @@ ol, li {
   transition: transform 0.1s;
 }
 
-
+.carousel__navigation-button:active {
+ background-color: #002bff;
+}
 .carousel__prev,
 .carousel__next 
 {
@@ -478,8 +419,67 @@ ol, li {
   pointer-events: none;
 } */
 
-.carousel__navigation-button:active{
-  box-shadow: 2px white;
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
 }
 
 
