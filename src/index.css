@@ -23,28 +23,49 @@
   width: 75vw;
 }
 
+.header-div img{
+ width: 3vw;
+ height: 5vh;
+}
+
 .header-div h1 {
   font-size: 5vh;
   font-family: papyrus;
   overflow-y: hidden ;
+  opacity: 0%;
+}
+.header-div h1:hover {
+  font-size: 5vh;
+  font-family: papyrus;
+  overflow-y: hidden ;
+  opacity: 100%;
+  
 }
 
 .main-content {
   display: inline-block;  
   overflow-x: hidden;
   width: 75vw;
-  height: calc(100vh - 77px);
+  height: calc(100vh - 75px);
   position: sticky;
   margin-left:25vw;
-  margin-top: 7.88vh;
+  margin-top: 9.63vh;
   color: black;
+  ;
 }
 
 .main-content section {
   height: inherit;
   padding: 1vw+1vh;
-  position: relative;
- 
+  position: relative; 
+}
+#top {
+  text-align: center;
+}
+
+p {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 #top::before {
@@ -109,10 +130,11 @@
   padding-right: 4vw;
 }
 
-.top-content-div {
-  padding-top: 2vh;
-  text-align: center;
+.contact-div {
+  display: inline-flex;
+  padding-bottom: 1.5vh
 }
+
 .list-div {
   padding-left: 2vw;
 }
@@ -131,19 +153,28 @@
   width: 25vw;
   height: 40vh;
   isolation: isolate;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
-.image-div {
+.img-div {
   text-align: center;
 }
 
 .xp-text-div {
   align-content: center;
-  border: 1px solid black;
+  border: 10px ridge black;
   height: 60vh;
-
+  border-radius: 10px;
+  text-align: center;
 }
-.icon-div {
+
+.item-div{
+text-align: left;
+margin-left: 1vw;
+margin-right: 1vw;
+}
+.icon-img {
   width: 2vw;
   height: 2.5vh;
   margin-left: 1vw;
@@ -346,7 +377,7 @@ ol, li {
 .carousel__navigation {
   position: absolute;
   right: 0; 
-  bottom: 1vh;
+  bottom: 1.5vh;
   left: 0;
   text-align: center;
 }
@@ -368,9 +399,6 @@ ol, li {
   transition: transform 0.1s;
 }
 
-.carousel__navigation-button:active {
- background-color: #002bff;
-}
 .carousel__prev,
 .carousel__next 
 {
@@ -395,7 +423,6 @@ ol, li {
   background-position: center
 }
 
-
 .carousel__next {
   right: 0.5vw;
   background-image: url(./assets/bgimg/next.png);
@@ -404,20 +431,10 @@ ol, li {
   background-repeat: no-repeat;
   background-position: center
 }
-/* .carousel::before,
-.carousel::after {
-  content: '';
-  z-index: 1;
-  background-color: #333;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-  pointer-events: none;
-} */
+ 
+.carousel__navigation-button:hover {
+  background-color: #002bff;
+}
 
 @keyframes glowing {
   0% { background-position: 0 0; }
