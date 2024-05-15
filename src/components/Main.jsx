@@ -4,15 +4,14 @@ import Content from './Content'
 import Header from './Header'
 import Footer from './Footer'
 
-export default function Main(props) {
-  const {info, isInViewport} = props
+export default function Main() {
   return (
     <>
     <div className="main-container" id='mainContId'>
       <Header/>
       <Sidebar/>
       <div className='main-content'>
-        <Content info={info} isInViewport={isInViewport}/>
+        <Content/>
       </div>
       <Footer/>
     </div>
