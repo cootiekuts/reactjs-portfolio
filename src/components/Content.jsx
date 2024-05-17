@@ -4,8 +4,8 @@ import { useState } from 'react'
 export default function Content() {
   const info = { 
     name:'Bryle Christian Regencia',
-    provAdd: '178 Ilaya, Balanacan, Mogpog, Marinduque 4901',
-    cityAdd: '822 P.Herrera, Aguho, Pateros, Metro Manila 1620',
+    // provAdd: '178 Ilaya, Balanacan, Mogpog, Marinduque 4901',
+    // cityAdd: '822 P.Herrera, Aguho, Pateros, Metro Manila 1620',
     mobNum: '09158436060',
     emailAdd:'rbrylechristian@gmail.com'}
  
@@ -93,10 +93,10 @@ export default function Content() {
           <img className='prof-img' src='img/prof-pic.jpg'/>
 
           <h3>Full Name: {info.name}</h3>
-        <h3><p>Addresses:</p></h3>
+        {/* <h3><p>Addresses:</p></h3>
           <h3>Provincial: {info.provAdd} </h3>
-          <h3>Metro Manila: {info.cityAdd}</h3>
-        <h3><p>Contact Information:</p></h3>
+          <h3>Metro Manila: {info.cityAdd}</h3> */}
+        <address><h3><p>Contact Information:</p></h3>
           <h3>Mobile Number: {info.mobNum}</h3>
           <h3>Email: {info.emailAdd}<a href="mailto:rbrylechristian@gmail.com" target='blank'><img className='icon-img' src="img/email-icon.png"/></a></h3>
             
@@ -105,7 +105,8 @@ export default function Content() {
           <a href='https://www.facebook.com/bc.regencia' target="_blank"><img className='icon-img' src="img/fb-icon.png"/></a>
           <a href='https://www.linkedin.com/in/bryle-christian-regencia' target="_blank"><img className='icon-img' src="img/linkedin-icon.png"/></a></p></h3>
           </div>
-          <h3>View Resume:<a href="https://drive.google.com/file/d/1aBiVCrl5QGXgYRIaYJtrc7zlWQ0woF5t/view?usp=sharing" target='blank'><img className='icon-img' src="img/gdrive-icon.png"/></a></h3>
+        </address>
+        <h3>View Resume:<a href="https://drive.google.com/file/d/1aBiVCrl5QGXgYRIaYJtrc7zlWQ0woF5t/view?usp=sharing" target='blank'><img className='icon-img' src="img/gdrive-icon.png"/></a></h3>
 
       </section>
 
