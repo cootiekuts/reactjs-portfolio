@@ -559,7 +559,13 @@ $tablet2-width: 1024px;
 
  @media only screen and (max-width: $mobile2-width) {
   * {
-   max-width: math.div($screen-width, $mobile2-width) * 100%; 
+   max-width: math.div($screen-width, $mobile2-width) * 100%;
+  .sidebar-button {
+    // max-width: math.div($mobile2-width, $screen-width) * 100 * $screen-width;
+    } 
+   }
+   h2 {
+    // font-size: inherit;
    }
  }
  @media only screen and (max-width: $desk-tab1-width) and (max-height: $tablet1-height) {
@@ -573,5 +579,12 @@ $tablet2-width: 1024px;
   * {
    max-width: math.div($screen-width, $tablet2-width) * 100%;
    max-height:  math.div($screen-height, $tablet2-height) * 100%;
+   }
+   h2 {
+    font-size: calc(1vw + 1vh);
+   }
+
+   .sidebar-button {
+    // height: inherit;
    }
  }
