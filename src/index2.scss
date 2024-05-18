@@ -1,107 +1,55 @@
 @use "sass:math";
-
-$ratio: math.div(1296,1608);
-$h1-size: calc(2vw*$ratio + 2vh);
-$h2-size: calc(2vw*$ratio + 2vh);
-
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Verdana Tahoma, sans-serif;
   -ms-overflow-style: none;
-   
-  h2 {
-    font-size: $h2-size;
-  }
 }
 
+h2 {
+  font-size: calc(1vw + 2vh);
+}
 
 @font-face { 
   font-family: papyrus; src: url(./assets/fonts/papyrus.ttf); 
 } 
 
-
 .main-container {
-  width: 100vw;
-  height: 100vh;
   display: grid;
+  align-items: stretch;
   grid-template-rows: 10vh auto 5vh;
   grid-template-columns: 25vw auto;
   grid-template-areas: 'sb hd' 'sb mn' 'ft ft';
-  align-items: stretch;
+  height: 100vh
 }
 
+.sidebar {
+  align-content: center;
+  grid-area: sb;
+  border: 1px solid black;
+}
 
 header {
-  background-color:rgb(150, 48, 140);
-  z-index: 1;
-  grid-area: hd;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  
-  img{
-    width: 5vw;
-    height: 6vh;
-
-  }
-
-  h1 {
-    font-size: $h1-size;
-    font-family: papyrus;
-    overflow-y: hidden ;
-    opacity: 0;
-    transition: 2s;
-    transition-timing-function: ease;
-
-    position: relative;
-  }
-
-  h1:hover {
-    font-size: $h1-size;;
-    font-family: papyrus;
-    overflow-y: hidden ;
-    opacity: 1;
-    transition: 2s;
-    transition-timing-function: ease;
-  
-  }
-}
-
-.sidebar { 
-  grid-area: sb;
-  z-index: 1;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
   align-content: center;
-}
-
-footer{
-  // position: fixed;
-  grid-area: ft;
+  grid-area: hd;
+  border: 1px solid black;
   text-align: center;
-  // height: inherit;
-  background-color:#b7b7b7;
-  z-index: 1;
-
   img {
-    max-width: 20px;
-    max-height: 20px;
-    margin-top: 3px;
+    width: 9vh;
+    height: inherit;
   }
 }
+
 
 .main-content {
-    display: inline-block;  
+    // display: inline-block;  
     overflow-x: hidden;
+    // width: 75vw;
     grid-area: mn;
-    height: auto;
-    position: relative;
+    position: sticky;
+    // margin-left:25vw;
+    // margin-top: 11vh;
   
  section {
   padding-top: 2vh;
@@ -121,6 +69,9 @@ footer{
   }
 }
 
+footer {
+  height: 100%;
+}
 
 #top {
   text-align: center;
@@ -234,7 +185,13 @@ margin-right: 1vw;
   margin-left: 1vw;
   isolation: isolate;
 }
- 
+
+.footer-div img {
+  max-width: 20px;
+  max-height: 20px;
+  margin-top: 3px;
+}
+  
 .sidebar-button {
   border-radius: 10px;
   width: 20vw;
@@ -340,7 +297,7 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 70vh;
+  padding-top: 78vh;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
@@ -358,7 +315,8 @@ ol, li {
   scroll-snap-type: x mandatory;
   margin-left: 2vw;
   margin-right: 2vw;
-
+  margin-bottom: 3vh;
+  
 }
 
 .carousel__slide {
@@ -549,66 +507,31 @@ $tablet1-height: 800px;
 $tablet2-height: 768px;
 $desktop-height: 720px;
 
-
-$ratio-tab2: math.div(768,1024);
-$h1-tab2-size: calc(1vw*$ratio + 1vh);
-$h2-tab2-size: 10px;
-
 @media only screen and (max-width: $desk-tab1-width) {
 
 }
 
 @media only screen and (max-width: $tablet2-width) {
-  header {
-    h1{
-      font-size: 25px;
-    }
-
-    h1:hover{
-      font-size: 25px;
-    }
-
-    img{
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  h2 {
-    font-size: $h2-tab2-size;
-  }
-  .prof-img {
-    width: 150px;
-    height: 160px;
-  }
-
-  .sidebar {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+ 
 }
-
-
 
 @media only screen and (max-width: $mobile1-width) {
 
 
  }
 
-@media only screen and (max-width: $mobile2-width) {
+ @media only screen and (max-width: $mobile2-width) {
   h2 {
-    font-size: 1px;
+    font-size: 9px;
   }
 
   header h1 {
-    font-size: 1vh;
+    font-size: 8px
   }
 
   header h1:hover {
     font-size: 8px
   }
 
-}
+ }
 

@@ -13,38 +13,6 @@ export default function Content() {
   const [isNav2, setNav2] = useState(false)
   const [isNav3, setNav3] = useState(false)
   const [isNav4, setNav4] = useState(false)
-  // var setNav1 = 'carousel__navigation-button'
-  // var setNav2 = 'carousel__navigation-button'
-  // var setNav3 = 'carousel__navigation-button'
-  // var setNav4 = 'carousel__navigation-button'
-  
-  // const onClickHeader1 = () => {
-  //   setNav1='nav-button-active-1'
-  //   setNav2='carousel__navigation-button'
-  //   setNav3='carousel__navigation-button'
-  //   setNav4='carousel__navigation-button'
-  // } 
-
-  // const onClickHeader2 = () => {
-  //   setNav2='nav-button-active-2'
-  //   setNav1='carousel__navigation-button'
-  //   setNav3='carousel__navigation-button'
-  //   setNav4='carousel__navigation-button'
-  // } 
-
-  // const onClickHeader3 = () => {
-  //   setNav3='nav-button-active-1'
-  //   setNav2='carousel__navigation-button'
-  //   setNav1='carousel__navigation-button'
-  //   setNav4='carousel__navigation-button'
-  // } 
-
-  // const onClickHeader4 = () => {
-  //   setNav4='nav-button-active-2'
-  //   setNav2='carousel__navigation-button'
-  //   setNav3='carousel__navigation-button'
-  //   setNav1='carousel__navigation-button'
-  // } 
   
   const onClickHeader1 = () => {
     setNav1(true)
@@ -222,16 +190,17 @@ export default function Content() {
               </div>
             </li>
           </ol>
+        </div>
 
-          <aside className="carousel__navigation">
-            <ol className="carousel__navigation-list">
-              <li className="carousel__navigation-item">
-                <a href="#carousel__slide1"
-                  className= {`${isNav1 ? 'nav-button-active-1' : 'carousel__navigation-button'}`} onClick={onClickHeader1} id='nav1'></a> 
-              </li>
-              <li className="carousel__navigation-item">
-                <a href="#carousel__slide2"
-                  className={ `${isNav2 ? 'nav-button-active-2' : 'carousel__navigation-button'}`} onClick={onClickHeader2} id='nav2'></a>   
+        <aside className="carousel__navigation">
+          <ol className="carousel__navigation-list">
+            <li className="carousel__navigation-item">
+              <a href="#carousel__slide1"
+                className= {`${isNav1 ? 'nav-button-active-1' : 'carousel__navigation-button'}`} onClick={onClickHeader1} id='nav1'></a> 
+            </li>
+            <li className="carousel__navigation-item">
+              <a href="#carousel__slide2"
+                className={ `${isNav2 ? 'nav-button-active-2' : 'carousel__navigation-button'}`} onClick={onClickHeader2} id='nav2'></a>   
               </li>
               <li className="carousel__navigation-item">
                 <a href="#carousel__slide3"
@@ -244,7 +213,7 @@ export default function Content() {
 
             </ol>
           </aside>
-        </div>
+            
       </section>
 
       <section id='skill'>
