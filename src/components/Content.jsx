@@ -57,18 +57,12 @@ export default function Content() {
     
     <>
       <section id='top'>
-          <h2>BASIC INFORMATION</h2>
-
-          <img className='prof-img' src='img/prof-pic.jpg'/>
-
-          <h3>Full Name: {info.name}</h3>
-        {/* <h3><p>Addresses:</p></h3>
-          <h3>Provincial: {info.provAdd} </h3>
-          <h3>Metro Manila: {info.cityAdd}</h3> */}
+        <h2>BASIC INFORMATION</h2>
+        <span><img className='prof-img' src='img/prof-pic.jpg'/></span>
+        <h3>Full Name: {info.name}</h3>
         <address><h3><p>Contact Information:</p></h3>
           <h3>Mobile Number: {info.mobNum}</h3>
-          <h3>Email: {info.emailAdd}<a href="mailto:rbrylechristian@gmail.com" target='blank'><img className='icon-img' src="img/email-icon.png"/></a></h3>
-            
+          <h3>Email: {info.emailAdd}<a href="mailto:rbrylechristian@gmail.com" target='blank'><img className='icon-img' src="img/email-icon.png"/></a></h3>  
           <div className='contact-div'>
         <h3><p>Socials:
           <a href='https://www.facebook.com/bc.regencia' target="_blank"><img className='icon-img' src="img/fb-icon.png"/></a>
@@ -89,22 +83,18 @@ export default function Content() {
                   className="carousel__prev"></a>
                 <a href="#carousel__slide2" onClick={onClickHeader2}
                   className="carousel__next"/>
-
-              <div className='content-div'>
-                <h2><p>Freelance - Social Media Manager</p></h2>
-                
+                <h2><p>Freelance - Social Media Manager</p></h2> 
                 <div className='place-date-div'>    
-                <h3><p>April 2023 - December 2023</p></h3>
+                  <h3><p>April 2023 - December 2023</p></h3>
                 </div>
-
+              <div className='content-div'>
                 <div className='xp-text-div'>
-                <h3><p>Job Responsibility</p></h3><br/>
+
+                  <h3><p>Job Responsibility</p></h3><br/>
                   <div className='item-div'>
                     <h3>•Content management including post creation, image editing, post scheduling and caption making</h3>
                     <h3>•Paid ads management including creative making, testing and scheduling</h3>
-                    <h3>{}</h3>
                   </div>
-            
                 </div>
               </div>   
             </li>
