@@ -318,7 +318,8 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 57vh;
+  padding-top: 60vh;
+  height: fit-content;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
@@ -373,9 +374,10 @@ ol, li {
 
 .carousel__navigation {
   position: relative;
-  right: 0; 
-  left: 0;
   text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .carousel__navigation-list,
@@ -391,6 +393,8 @@ ol, li {
   background-clip: content-box;
   border: 1px solid transparent;
   border-radius: 50%;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .carousel__navigation-button:hover {
@@ -591,12 +595,6 @@ $h2-tab2-size: 10px;
       font-size: 15px;
     } 
   }
-
-  .main-content {
-    section {
-
-    }
-  }   
 
   .carousel__viewport {
    height: inherit;
