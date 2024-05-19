@@ -597,8 +597,9 @@ $h2-tab2-size: 10px;
   }
 
   .carousel__viewport {
-   height: inherit;
+   height: 100%;
    align-content: center;
+   padding-bottom: 2vh;
   }
 
   .icon-img {
