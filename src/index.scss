@@ -183,11 +183,54 @@ footer{
 
 }
 
-.top-content-div {
-  display:flex; 
-  flex-flow:column; 
-  justify-content:center;
-  text-align:left;
+.top-info-div {
+  display:flex;
+  flex-flow: column;
+  grid-gap: 3.22vh; 
+  height:100%; 
+  width: 100%;
+  justify-content:center; 
+  place-items:center;
+}
+
+@keyframes display {
+  from {
+    
+  }
+}
+.name-span, .mobile-number-span, .email-span, .resume-span {
+  opacity: 0;
+  background-color: pink;
+  padding: 2vh .5vw 2vh 0.5vw;
+  margin: 0px;
+  transform-origin: top right;
+  border-radius: 1vh 1vw;
+
+}
+
+
+.top-info-div:hover .name-span{
+  transition-delay: 500ms;
+  transform: translateX(-19vw) translateY(-19vh);
+  opacity: 1;
+}
+
+.top-info-div:hover .mobile-number-span{
+  transition-delay: 1s;
+  transform: translateX(-18.4vw) translateY(-22vh);
+  opacity: 1;
+}
+
+.top-info-div:hover .email-span{
+  transition-delay: 1.5s;
+  transform: translateX(-23.6vw) translateY(-25vh);
+  opacity: 1;
+}
+
+.top-info-div:hover .resume-span{
+  transition-delay: 2s;
+  transform: translateX(-16.75vw) translateY(-28vh);
+  opacity: 1;
 }
 
 .prof-img {
@@ -201,6 +244,7 @@ footer{
   z-index: 1;
   animation: bounce 2s infinite;
   width: 35%;
+  cursor: pointer;
 }
 
 @keyframes bounce {
@@ -222,36 +266,13 @@ footer{
   }
 }
 
-
-.top-info-div {
-  display:flex;
-  flex-flow: column;
-  grid-gap: 3.22vh; 
-  height:90%; 
-  justify-content:center; 
-  place-items:center
-}
-
 .prof-img:hover{
   animation: slideUp 550ms forwards;
 }
 
-.prof-img:hover .prof-img{
-  transform:translateY(-35%)
-}
-
-
-.top-info-div:hover .top-content-div{
-  transform: translateY(80%);
-}
-.address-text {
-  position: relative;
-  align-content: center
-  
-}
-
 .name-span { 
   position: relative;
+  margin: 0;
 }
 
 .header-span {
@@ -326,6 +347,29 @@ footer{
   position: absolute;
   inset: 0;
   opacity: 0.3;
+}
+
+.skill-bar-span{
+  display:flex; 
+  background-color:hsl(148, 100%, 10%); 
+  width:30vw;
+  border-radius:50px;
+  box-shadow:1px 1px 2.1vh black;
+  border:2px solid white;
+  place-items:center
+}
+
+.skill-rate-span{
+  display: flex;
+  background-color: hsl(148, 100%, 45%); 
+  height: max;
+  border-radius: 50px;
+  justify-content:right
+}
+
+.skill-description-span{
+  display:flex;
+  flex-flow:column
 }
 
 #about::before {
@@ -575,12 +619,12 @@ $h1-tab2-size: 25px;
 $h2-tab2-size: 10px;
 
 @media only screen and (max-width: $tablet2-width) {
+
+  h2 {
+    font-size: $h2-tab2-size;
+  }
   header {
     h1{
-      font-size: $h1-tab2-size;
-    }
-
-    h1:hover{
       font-size: $h1-tab2-size;
     }
 
@@ -592,10 +636,8 @@ $h2-tab2-size: 10px;
     }
   }
   
-
-
   .prof-img {
-    max-width: calc(0.15*$tablet2-width);
+    max-width: calc(0.3*$tablet2-width);
     width: 100%;
     max-height: calc(0.2*$tablet2-width);
   }
@@ -605,10 +647,6 @@ $h2-tab2-size: 10px;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-   
-    h2 {
-      font-size: $h2-tab2-size;
-    }
   }
 
   #top {
@@ -617,7 +655,7 @@ $h2-tab2-size: 10px;
     }
 
     h3 {
-      font-size: calc(0.017*$tablet2-width);
+      font-size: calc(0.013*$tablet2-width);
     }
   }
 
@@ -625,11 +663,6 @@ $h2-tab2-size: 10px;
     flex-flow: column;
     align-content: center;
     justify-content: center;
-  }
-
-  .top-info-div:hover .prof-img{
-    transition: 1s;
-    transform: scale(1.1);
   }
 
   #xp {
