@@ -1,25 +1,15 @@
-import React, { useState } from 'react'
-
 export default function Sidebar() {
-
-  function status() {
-    const data = useData();
-  }
-
-  function useData() {
-    
-  }
-
-
-
+  
   return ( 
     <>
     <div className='sidebar' id="sidebarId">
-        <a href='#top'><button className='sidebar-button'><h2>BASIC INFORMATION {}</h2></button></a>
-        <a href='#xp'><button className='sidebar-button'><h2>EXPERIENCE</h2></button></a>
-        <a href='#skill'><button className='sidebar-button'><h2>SKILL</h2></button></a>
-        <a href='#about'><button className='sidebar-button'><h2>ABOUT</h2></button></a>
-        <a href='#reso'><button className='sidebar-button'><h2>RESOURCE & CREDIT</h2></button></a>
+        <nav>
+          <a href='#top'><button><h2>BASIC INFORMATION</h2></button></a>
+          <a href='#xp'><button><h2>EXPERIENCE</h2></button></a>
+          <a href='#skill'><button><h2>SKILL</h2></button></a>
+          <a href='#about'><button><h2>ABOUT</h2></button></a>
+          <a href='#reso'><button><h2>RESOURCE & CREDIT</h2></button></a>
+        </nav>
     </div>
     </>
   )

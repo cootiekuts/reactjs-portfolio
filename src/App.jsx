@@ -1,5 +1,3 @@
-
-import { useState } from "react";
 import Main from "./components/Main.jsx";
 
 function App() {
