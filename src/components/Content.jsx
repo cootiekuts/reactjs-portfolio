@@ -65,7 +65,7 @@ const abtImageInfo=[
         <Carousel h2Text={h2Text} h3Text={h3Text}/>           
       </section>
 
-      <section id='skill'>
+      <section id='skill' >
         <SectionTitle name="SKILL"/>
         <div style={{display: "grid", gridTemplateColumns: "repeat(2, auto)", isolation: "isolate", placeItems: "center", rowGap: "3vh", marginTop: "4vh"}}>
           {skillInfo.map((skill, index) => 
@@ -89,10 +89,10 @@ const abtImageInfo=[
       </section>  
       <section id='reso'>
         <SectionTitle name="RESOURCE AND CREDIT"/>
-        <div style={{display:"flex", justifyContent:"center", height:"70vh", border:"1px solid"}}>
-          <ol style={{display:"flex", placeItems:"center" , flexFlow:"column", isolation:"isolate", border:"1px solid", justifyContent:"center", width:"inherit"}}>
+        <div className="resource-div">
+          <ol className='resource-ol'>
             {resourceInfo.map((link, index) => 
-              <li >
+              <li className='resource-li' >
                 <a href={link.link} title={link.label} style={{ color:"blue"}} key={index}>{link.text == null ? link.label : link.text}</a>
               </li>
               )

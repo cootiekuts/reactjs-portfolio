@@ -193,18 +193,13 @@ footer{
   place-items:center;
 }
 
-@keyframes display {
-  from {
-    
-  }
-}
 .name-span, .mobile-number-span, .email-span, .resume-span {
   opacity: 0;
   background-color: pink;
   padding: 2vh .5vw 2vh 0.5vw;
   margin: 0px;
   transform-origin: top right;
-  border-radius: 1vh 1vw;
+  border-radius: 2vw 2vh;
 
 }
 
@@ -237,14 +232,19 @@ footer{
   position: absolute;
   text-align: center;
   isolation: isolate;
-  filter: drop-shadow(4px 4px 9px black);
+  
   border: 1px solid black;
   border-radius: 10px;
   transition:all 3s;
   z-index: 1;
   animation: bounce 2s infinite;
-  width: 35%;
   cursor: pointer;
+}
+
+.top-info-div:hover .prof-img:hover{
+  filter: drop-shadow(4px 4px 9px yellow);
+  animation: slideUp 550ms forwards;
+  
 }
 
 @keyframes bounce {
@@ -261,13 +261,9 @@ footer{
 
 @keyframes slideUp {
   100%{
-    transform:translateY(-35%) scale(0.8);
+    transform:translateY(-45%) scale(1.1);
     transition: ease-in-out;
   }
-}
-
-.prof-img:hover{
-  animation: slideUp 550ms forwards;
 }
 
 .name-span { 
@@ -391,6 +387,51 @@ footer{
   inset: 0;
   opacity: 0.3;
 }
+
+.resource-div {
+  display:flex;
+  justify-content:center;
+  height:70vh;
+  // border:1px solid;
+  place-items: center;
+  z-index: 1;
+  
+}
+
+.resource-ol {
+  display:flex;
+  place-items:center; 
+  flex-flow:column; 
+  isolation:isolate;
+  border:5px solid;
+  justify-content:center;
+  width:inherit;
+  height: fit-content;
+  overflow-y: hidden;
+  border-radius: 2vh 2vw;
+  box-shadow: 0px 5px 20px 0px yellow;
+  background-color: #00ffd5;
+  
+}
+
+.resource-div:hover .resource-li{
+  animation-play-state: paused;
+}
+.resource-li {
+  
+  animation: scroll 10s infinite;
+}
+
+
+@keyframes scroll {
+  0%{
+    transform:translateY(27vh);
+  }
+  100%{
+    transform:translateY(-27vh);
+  }
+}
+
 
 .item-div{
 text-align: left;

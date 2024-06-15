@@ -44,7 +44,7 @@ export default function Main() {
 
   return (
     <div className="main-container" id='mainContId' >
-      <Header text = "KNEE GA"/>
+      <Header text = "SURPRISE!"/>
       <Sidebar/>
       <Content contactInfo={contactInfo} linkInfo={linkInfo} resourceInfo={resourceInfo}/>
       <Footer contactInfo={contactInfo} linkInfo={linkInfo}/>
