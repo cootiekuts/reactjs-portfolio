@@ -1,16 +1,44 @@
 export default function Sidebar() {
   
   return ( 
-    <>
-    <div className='sidebar' id="sidebarId">
-        <nav>
-          <a href='#top'><button><h2>BASIC INFORMATION</h2></button></a>
-          <a href='#xp'><button><h2>EXPERIENCE</h2></button></a>
-          <a href='#skill'><button><h2>SKILL</h2></button></a>
-          <a href='#about'><button><h2>ABOUT</h2></button></a>
-          <a href='#reso'><button><h2>RESOURCE & CREDIT</h2></button></a>
-        </nav>
-    </div>
-    </>
+    <nav className='sidebar' id="sidebarId">
+  
+        <div className="button-wrapper">
+          <a href='#top'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            BASIC INFORMATION
+          </a>
+          <a href='#xp'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            experience</a>
+          <a href='#skill'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SKILL
+          </a>
+          <a href='#about'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+              ABOUT
+            </a>
+          <a href='#reso'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            RESOURCE & CREDIT
+          </a>    
+      </div>
+    </nav>
   )
 }

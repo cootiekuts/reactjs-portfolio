@@ -41,7 +41,7 @@ const skillInfo=[
 const imageDimension={
   imgWidth:'15vw', 
   imgHeight:'25vh', 
-  shadow:"1px 1px 2.1vh black",
+  shadow:"1px 1px 2.1vh #03e9f4",
 }
 
 const {imgWidth, imgHeight, shadow,}=imageDimension
@@ -61,15 +61,15 @@ const abtImageInfo=[
       </section>
       
       <section id='xp'>
-        <SectionTitle name="EXPERIENCE"/>
-        <Carousel h2Text={h2Text} h3Text={h3Text}/>           
+          <SectionTitle name="EXPERIENCE"/>
+           <Carousel h2Text={h2Text} h3Text={h3Text}/>           
       </section>
 
       <section id='skill' >
         <SectionTitle name="SKILL"/>
         <div style={{display: "grid", gridTemplateColumns: "repeat(2, auto)", isolation: "isolate", placeItems: "center", rowGap: "3vh", marginTop: "4vh"}}>
           {skillInfo.map((skill, index) => 
-            <SkillBar key={index} label={skill.label} width={skill.width} link={skill.link} imgWidth={skill.imgWidth} imgHeight={skill.imgHeight}/>
+            <SkillBar key={index} label={skill.label} width={skill.width} link={skill.link} imgWidth={skill.imgWidth} imgHeight={skill.imgHeight} shadow={shadow}/>
           )}
         </div>
       </section>
@@ -89,11 +89,11 @@ const abtImageInfo=[
       </section>  
       <section id='reso'>
         <SectionTitle name="RESOURCE AND CREDIT"/>
-        <div className="resource-div">
+        <div className="section-content-div">
           <ol className='resource-ol'>
             {resourceInfo.map((link, index) => 
               <li className='resource-li' >
-                <a href={link.link} title={link.label} style={{ color:"blue"}} key={index}>{link.text == null ? link.label : link.text}</a>
+                <a href={link.link} title={link.label} style={{ color:"blue"}} key={index}><h3>{link.text == null ? link.label : link.text}</h3></a>
               </li>
               )
             }
